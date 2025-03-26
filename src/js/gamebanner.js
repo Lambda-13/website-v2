@@ -21,7 +21,7 @@ function setupreloader(server, target) {
 	$(target).removeAttr("src");
 	var gamebannerspan = $('<span class="gamebanner statuserror"></span>');
 	gamebannerspan.append(
-		'<span class="gamebannerline gamebanneraddrline"><span class="gamebanneraddr"></span><span class="gamebannericons"><span class="gamebannericon gamebannerbunker"> <i title="This server is not accepting connections from new players (Panic Bunker)" class="bi bi-shield"></i></span><span class="gamebannericon gamebannernoenter"><i title="Spectate only, Entry into the round has been disabled." class="bi bi-eyeglasses"></i></span><span class="gamebannericon gamebannerhub"><i title="This server is on the BYOND hub" class="bi bi-globe"></i></span></span></span>',
+		'<span class="gamebannerline gamebanneraddrline"><span class="gamebanneraddr"></span><span class="gamebannericons"><span class="gamebannericon gamebannerbunker"> <i title="Включён ограничитель для игроков (Whitelist или Panic Bunker)" class="bi bi-shield"></i></span><span class="gamebannericon gamebannernoenter"><i title="Только наблюдение, вход в раунд отключён." class="bi bi-eyeglasses"></i></span><span class="gamebannericon gamebannerhub"><i title="Сервер виден в BYOND Hub" class="bi bi-globe"></i></span></span></span>',
 		'<span class="gamebannerline gamebannername"></span>',
 		'<span class="gamebannerline gamebannermode"></span>',
 		'<span class="gamebannerline gamebannermap"></span>',
@@ -161,7 +161,7 @@ function infofillbanner(banner, serverdata) {
 	}
 	if (!serverdata || typeof serverdata !== "object") {
 		$(".gamebannername", banner.target).text(banner.server);
-		return bannererror(banner, "Invalid Game Banner!");
+		return bannererror(banner, "Ошибка!");
 	}
 
 	$(".gamebanneraddr", banner.target).text(
@@ -203,9 +203,9 @@ function infofillbanner(banner, serverdata) {
 		if (serverdata.restarting && serverdata.restarting < 18)
 			return bannererror(
 				banner,
-				"Server Restarting" + ".".repeat(serverdata.restarting)
+				"Сервер на рестарте" + ".".repeat(serverdata.restarting)
 			);
-		let errortext = "Connection Error!";
+		let errortext = "Ошибка подключения!";
 		if (serverdata.serverdata.errortext)
 			errortext = serverdata.serverdata.errortext;
 		return bannererror(banner, errortext);
@@ -239,18 +239,18 @@ function infofillbanner(banner, serverdata) {
 				.removeClass("statusinprogress statusroundend")
 				.addClass("statuslobby");
 	}
-	let modestr = "Playing /tg/Station 13";
+	let modestr = "Версия: ???";
 	if (serverdata.hasOwnProperty("version"))
-		modestr = "Playing " + serverdata.version;
+		modestr = "Версия: " + serverdata.version;
 	if (serverdata.hasOwnProperty("custom_event")) {
-		modestr = "Playing Event " + serverdata.custom_event;
+		modestr = "Режим: " + serverdata.custom_event;
 	} else if (serverdata.hasOwnProperty("mode")) {
-		modestr += ' mode "' + serverdata.mode + '"';
+		modestr += ' режим "' + serverdata.mode + '"';
 	}
 	$(".gamebannermode", banner.target).text(modestr);
 	if (serverdata.hasOwnProperty("map_name"))
 		$(".gamebannermap", banner.target).text(
-			"The map is: " + serverdata.map_name
+			"Карта: " + serverdata.map_name
 		);
 	else $(".gamebannermap", banner.target).text("\xa0");
 	let ttl = "";
@@ -288,7 +288,7 @@ function reloadbanners(force) {
 				console.dir(banner);*/
 					totalpop += infofillbanner(banner, data[server]);
 				});
-				$(".bannerusercount").text(totalpop + " total players.");
+				$(".bannerusercount").text(totalpop + " всего игроков.");
 			}
 		);
 	else ourrefreshtime = ourrefreshtime * 60;
