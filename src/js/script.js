@@ -91,7 +91,7 @@ closeElementList.forEach((closeElement) => {
 
 		console.error("Game Banners did not load");
 		document.querySelectorAll('.server-banner a').forEach(elem => { elem.innerText = elem.href })
-		document.getElementById("alerts").insertAdjacentHTML("afterbegin", '<div class="alert alert-warning border border-warning position-relative px-4" role="alert"><i class="bi bi-wifi-off fs-5 top-50"></i>Game Banners did not load. Providing fallback links.<br/>Check <a href="https://status.tgstation13.org/" target="_blank">status</a>.</div>');
+		document.getElementById("alerts").insertAdjacentHTML("afterbegin", '<div class="alert alert-warning border border-warning position-relative px-4" role="alert"><i class="bi bi-wifi-off fs-5 top-50"></i>Произошла ошибка при попытке загрузить баннеры серверов.<br/>Просьба отрепортить об этом <a href="https://discord.gg/dJu2Tyz8MK/" target="_blank">вот сюда</a>.</div>');
 	}
 
 	setTimeout(checkIfGamebannersLoaded, 20000);
