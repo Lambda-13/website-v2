@@ -288,7 +288,7 @@ function reloadbanners(force) {
 				console.dir(banner);*/
 					totalpop += infofillbanner(banner, data[server]);
 				});
-				$(".bannerusercount").text(totalpop + " всего игроков.");
+				$(".bannerusercount").text(totalpop + " игроков.");
 			}
 		);
 	else ourrefreshtime = ourrefreshtime * 60;

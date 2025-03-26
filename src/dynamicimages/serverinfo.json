@@ -1,7 +1,7 @@
 {
 	"refreshtime": 6007,
-	"bagil": {
-		"version": "/tg/Station 13",
+	"rustest": {
+		"version": "Rustest",
 		"respawn": 0,
 		"enter": 1,
 		"ai": 1,
@@ -29,14 +29,14 @@
 		"shuttle_mode": "idle",
 		"shuttle_timer": 10,
 		"serverdata": {
-			"address": "bagil.tgstation13.org",
-			"port": 2337,
-			"servername": "Basil [US-West]"
+			"address": "play.lambda13.online",
+			"port": 55551,
+			"servername": "Rustest [Lambda]"
 		},
 		"cachetime": 1623877389
 	},
-	"sybil": {
-		"version": "/tg/Station 13",
+	"civ13": {
+		"version": "RU Civilization 13",
 		"respawn": 0,
 		"enter": 1,
 		"ai": 1,
@@ -64,14 +64,14 @@
 		"shuttle_mode": "called",
 		"shuttle_timer": 451,
 		"serverdata": {
-			"address": "sybil.tgstation13.org",
-			"port": 1337,
-			"servername": "Sybil [US-West]"
+			"address": "play.lambda13.online",
+			"port": 55555,
+			"servername": "Civilization 13 [TDM]"
 		},
 		"cachetime": 1623877389
 	},
-	"sybil2": {
-		"version": "/tg/Station 13",
+	"darkness": {
+		"version": "World Of Darkness 13",
 		"respawn": 0,
 		"enter": 1,
 		"ai": 1,
@@ -99,153 +99,21 @@
 		"shuttle_mode": "idle",
 		"shuttle_timer": 10,
 		"serverdata": {
-			"address": "manuel.tgstation13.org",
-			"port": 1447,
-			"servername": "Manuel [Roleplay/US-West]"
+			"address": "play.lambda13.online",
+			"port": 55558,
+			"servername": "Darkness 13 [Vampire]"
 		},
 		"cachetime": 1623877389
 	},
-	"eventhall": {
+	"secondary": {
 		"serverdata": {
-			"address": "events.tgstation13.org",
-			"port": 4337,
-			"servername": "Event Hall [EU]",
-			"errortext": "No events currently \nplanned"
+			"address": "play.lambda13.online",
+			"port": 55557,
+			"servername": "Secondary 13 [Temp]",
+			"errortext": "Отключён"
 		},
 		"cachetime": 1623877389,
 		"error": true,
 		"errormsg": "ERROR: read error"
-	},
-	"eventhallus": {
-		"serverdata": {
-			"address": "bagil.tgstation13.org",
-			"port": 4447,
-			"servername": "Event Hall [US-West]",
-			"errortext": "No events currently planned"
-		},
-		"cachetime": 1623877389,
-		"error": true,
-		"errormsg": "ERROR: read error"
-	},
-	"terry": {
-		"version": "/tg/Station 13",
-		"respawn": 0,
-		"enter": 1,
-		"ai": 1,
-		"host": "Guest-597083193",
-		"round_id": "164244",
-		"players": 54,
-		"revision": "002790564a48888b796e42eeb74e54b06d13cd64",
-		"revision_date": "",
-		"hub": 0,
-		"admins": 0,
-		"gamestate": 3,
-		"map_name": "MetaStation",
-		"security_level": "blue",
-		"round_duration": 816,
-		"time_dilation_current": 10,
-		"time_dilation_avg": 4.51529,
-		"time_dilation_avg_slow": 3.87436,
-		"time_dilation_avg_fast": 5.14008,
-		"soft_popcap": 70,
-		"hard_popcap": 90,
-		"extreme_popcap": 90,
-		"popcap": 90,
-		"bunkered": 0,
-		"interviews": 0,
-		"shuttle_mode": "idle",
-		"shuttle_timer": 10,
-		"serverdata": {
-			"address": "terry.tgstation13.org",
-			"port": 3336,
-			"servername": "Terry [EU]"
-		},
-		"cachetime": 1623877389
-	},
-	"dmca": {
-		"version": "TGMC",
-		"mode": "Distress Signal",
-		"respawn": 1,
-		"enter": 1,
-		"vote": 1,
-		"ai": 1,
-		"host": "Guest-597083193",
-		"round_id": "9427",
-		"players": 77,
-		"revision": "3341419812c3a1711f79a64d392450c5e71dee94",
-		"revision_date": null,
-		"hub": 1,
-		"admins": 1,
-		"gamestate": 3,
-		"map_name": "Magmoor Digsite IV (Pillar of Spring)",
-		"security_level": "green",
-		"round_duration": 1326,
-		"time_dilation_current": 3,
-		"time_dilation_avg": 2.10041,
-		"time_dilation_avg_slow": 1.8356,
-		"time_dilation_avg_fast": 2.56218,
-		"soft_popcap": 0,
-		"hard_popcap": 175,
-		"extreme_popcap": 250,
-		"popcap": 250,
-		"serverdata": {
-			"address": "tgmc.tgstation13.org",
-			"port": 5337,
-			"servername": "TerraGov Marine Corps",
-			"errortext": "Server not online",
-			"popcap": 180
-		},
-		"cachetime": 1623877389
-	},
-	"ftl13": {
-		"version": "/tg/Station 13",
-		"mode": "extended",
-		"respawn": 0,
-		"enter": 1,
-		"vote": 0,
-		"ai": 1,
-		"host": null,
-		"round_id": null,
-		"players": 0,
-		"revision": "fc07d84cc9c0129f7c5b3194aec76655267f04b6",
-		"revision_date": "2021-04-15T16:09:59+00:00",
-		"hub": 0,
-		"admins": 0,
-		"gamestate": 3,
-		"map_name": "Kilo Station",
-		"security_level": "green",
-		"round_duration": 246745,
-		"time_dilation_current": 5,
-		"time_dilation_avg": 5.37471,
-		"time_dilation_avg_slow": 5.48362,
-		"time_dilation_avg_fast": 5.15309,
-		"soft_popcap": 0,
-		"hard_popcap": 0,
-		"extreme_popcap": 0,
-		"popcap": null,
-		"bunkered": 0,
-		"interviews": 0,
-		"shuttle_mode": "idle",
-		"shuttle_timer": 10,
-		"serverdata": {
-			"address": "eurobeat.tgstation13.org",
-			"port": 42069,
-			"servername": "Alt Codebase Server 2",
-			"errortext": "Things seem tilted",
-			"popcap": 180,
-			"eventcolors": true
-		},
-		"cachetime": 1623877389
-	},
-	"campbell": {
-		"serverdata": {
-			"address": "campbell.tgstation13.org",
-			"port": 6337,
-			"servername": "Campbell [Roleplay/EU]",
-			"popcap": 50
-		},
-		"cachetime": 1623877389,
-		"error": true,
-		"errormsg": "ERROR: read timeout"
 	}
 }
