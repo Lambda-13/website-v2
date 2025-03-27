@@ -29,28 +29,28 @@
      
     //Rustest
     $servers[0] = Array();
-    $servers[0]["address"] = "play.lambda13.online";
+    $servers[0]["address"] = "147.45.40.133";
     $servers[0]["port"] = 55551;
     $servers[0]["servername"] = "Rustest [Lambda]";
     //$servers[0]["errortext"] = "Сектор временно закрыт.";
 
     //Civ13
     $servers[1] = Array();
-    $servers[1]["address"] = "play.lambda13.online";
+    $servers[1]["address"] = "147.45.40.133";
     $servers[1]["port"] = 55555;
     $servers[1]["servername"] = "Cilivization 13 [TDM]";
 	//$servers[1]["errortext"] = "Выбираем новую карту...";
      
     //World Of Darkness 13
     $servers[2] = Array();
-    $servers[2]["address"] = "play.lambda13.online";
+    $servers[2]["address"] = "147.45.40.133";
     $servers[2]["port"] = 55558;
     $servers[2]["servername"] = "Darkness 13 [Vampire]";
 	//$servers[2]["errortext"] = "Ночь ещё не наступила.";
 
     //Secondary
     $servers[3] = Array();
-    $servers[3]["address"] = "play.lambda13.online";
+    $servers[3]["address"] = "147.45.40.133";
     $servers[3]["port"] = 55553;
     $servers[3]["servername"] = "Secondary 13 [Temp]";
 	//$servers[3]["errortext"] = "Временный сервер закрыт.";
