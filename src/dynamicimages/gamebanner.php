@@ -186,12 +186,12 @@ function makeImage($variable_value_array) {
 	$textColorURL = imagecolorallocate ($image, 0xa9, 0xa6, 0xcc);
 	//first things first, lets check for bad shit.
 	if (!$variable_value_array || !is_array($variable_value_array) || count($variable_value_array) == 0) {
-		return imageerror($image, "No Data!");
+		return imageerror($image, "Отключён.");
 	}
 	
 	if (array_key_exists("ERROR", $variable_value_array)) {
 		if (($restarting = getvar($variable_value_array,"restarting")) && $restarting < 18 && $errortext_override === false) {
-			return imageerror($image, "Server Restarting");
+			return imageerror($image, "Рестарт...");
 		}
 		return imageerror($image, "$errortext");
 	}
@@ -296,7 +296,7 @@ function makeImage($variable_value_array) {
 	if (!validvar($players)) {
 		$restarting = getvar($variable_value_array,"restarting");
 		if ($restarting && $restarting < 18) {
-			return imageerror($image, "Server Restarting");
+			return imageerror($image, "Рестарт...");
 		}
 
 		return imageerror($image, "$errortext");
