@@ -123,3 +123,4 @@ localsettings.php
 
 src/*config*.json
 !src/config.json
+src/dynamicimages/serverinfo.json
