@@ -38,21 +38,21 @@
     $servers[1] = Array();
     $servers[1]["address"] = "play.lambda13.online";
     $servers[1]["port"] = 55555;
-    $servers[1]["servername"] = "civ13";
+    $servers[1]["servername"] = "Cilivization 13 [TDM]";
 	$servers[1]["errortext"] = "Выбираем новую карту...";
      
     //World Of Darkness 13
     $servers[2] = Array();
     $servers[2]["address"] = "play.lambda13.online";
     $servers[2]["port"] = 55558;
-    $servers[2]["servername"] = "vampire";
+    $servers[2]["servername"] = "Darkness 13 [Vampire]";
 	$servers[2]["errortext"] = "Ночь ещё не наступила.";
 
     //Secondary
     $servers[3] = Array();
     $servers[3]["address"] = "play.lambda13.online";
     $servers[3]["port"] = 55553;
-    $servers[3]["servername"] = "secondary";
+    $servers[3]["servername"] = "Secondary 13 [Temp]";
 	$servers[3]["errortext"] = "Временный сервер закрыт.";
 
 
