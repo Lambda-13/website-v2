@@ -28,32 +28,32 @@
     //Copy paste the code above to after this line
      
     //Rustest
-    $servers[1] = Array();
-    $servers[1]["address"] = "147.45.40.133";
-    $servers[1]["port"] = 55551;
-    $servers[1]["servername"] = "Rustest [Lambda]";
-    $servers[1]["errortext"] = "Сектор временно закрыт.";
+    $servers[0] = Array();
+    $servers[0]["address"] = "147.45.40.133";
+    $servers[0]["port"] = 55551;
+    $servers[0]["servername"] = "Rustest [Lambda]";
+    $servers[0]["errortext"] = "Сектор временно закрыт.";
 
     //Civ13
-    $servers[2] = Array();
-    $servers[2]["address"] = "147.45.40.133";
-    $servers[2]["port"] = 55555;
-    $servers[2]["servername"] = "Cilivization 13 [TDM]";
-	$servers[2]["errortext"] = "Выбираем новую карту...";
+    $servers[1] = Array();
+    $servers[1]["address"] = "147.45.40.133";
+    $servers[1]["port"] = 55555;
+    $servers[1]["servername"] = "Cilivization 13 [TDM]";
+	$servers[1]["errortext"] = "Выбираем новую карту...";
      
     //World Of Darkness 13
-    $servers[3] = Array();
-    $servers[3]["address"] = "147.45.40.133";
-    $servers[3]["port"] = 55558;
-    $servers[3]["servername"] = "Darkness 13 [Vampire]";
-	$servers[3]["errortext"] = "Ночь ещё не наступила.";
+    $servers[2] = Array();
+    $servers[2]["address"] = "147.45.40.133";
+    $servers[2]["port"] = 55558;
+    $servers[2]["servername"] = "Darkness 13 [Vampire]";
+	$servers[2]["errortext"] = "Ночь ещё не наступила.";
 
     //Secondary
-    $servers[4] = Array();
-    $servers[4]["address"] = "147.45.40.133";
-    $servers[4]["port"] = 55553;
-    $servers[4]["servername"] = "Secondary 13 [Temp]";
-	$servers[4]["errortext"] = "Временный сервер закрыт.";
+    $servers[3] = Array();
+    $servers[3]["address"] = "147.45.40.133";
+    $servers[3]["port"] = 55553;
+    $servers[3]["servername"] = "Secondary 13 [Temp]";
+	$servers[3]["errortext"] = "Временный сервер закрыт.";
 
 
  ///\/ you see this shit right here, that closing php tag, it better be the last thing in the file
