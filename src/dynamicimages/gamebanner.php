@@ -1,6 +1,9 @@
 <?php //<--- you see this shit right here, that php tag, it better be the first thing in the file
 		//If there is even a space or a newline before that tag, shit will break
 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 //SETUP
 
 define("DATA_STALE_TIME" ,600); //How many seconds before we consider the data stale and report an error
