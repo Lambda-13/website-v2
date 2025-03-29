@@ -278,14 +278,14 @@ function reloadbanners(force) {
 		$.get(
 			"https://lambda13.online/dynamicimages/serverinfo.json",
 			function (data) {
-				/*console.log("loading banners");
-			console.dir(refreshjobs);*/
+				console.log("loading banners");
+			console.dir(refreshjobs);
 				let totalpop = 0;
 				if (data.hasOwnProperty("refreshtime"))
 					refreshtime = Math.max(Number(data.refreshtime), 750);
 				$.each(refreshjobs, function (server, banner) {
-					/*console.log("filling banner "+server);
-				console.dir(banner);*/
+					console.log("filling banner "+server);
+				console.dir(banner);
 					totalpop += infofillbanner(banner, data[server]);
 				});
 				$(".bannerusercount").text(totalpop + " игроков.");
