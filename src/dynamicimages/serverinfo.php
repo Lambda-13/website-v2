@@ -31,7 +31,7 @@
     $servers[0] = Array();
     $servers[0]["address"] = "play.lambda13.online";
     $servers[0]["port"] = 55551;
-    $servers[0]["servername"] = "Rustest [Lambda]";
+    $servers[0]["servername"] = "rustest";
     $servers[0]["errortext"] = "Сектор временно закрыт.";
 
     //Civ13
