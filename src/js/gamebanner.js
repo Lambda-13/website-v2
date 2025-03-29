@@ -276,7 +276,7 @@ function reloadbanners(force) {
 	if (force || !getCookie("disablerefresh"))
 		// TODO: at some point, this should probably be "./dynamicimages/serverinfo.json"
 		$.get(
-			"https://lambda13.online/dynamicimages/serverinfo.json?v=" + Math.floor(Date.now() / 1000),
+			"https://lambda13.online/dynamicimages/serverinfo.json",
 			function (data) {
 				/*console.log("loading banners");
 			console.dir(refreshjobs);*/
